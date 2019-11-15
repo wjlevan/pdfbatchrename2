@@ -8,19 +8,33 @@ export class Sidebar extends Component {
         return(
             <div className="sidebar-container">
                 <h1 id="sidebar-title"><a href="/" id="sidebar-title-link">PDF BATCH RENAME</a></h1>
-                <h5 id="title-contents">CONTENTS</h5>
-                <span id="link-container">
-                    <span id="links">
-                        <a href="/#start-screen">1. Start Screen</a><br/>
-                        <a href="/#select-directory">2. Select Directory</a><br/>
-                        <a href="/#select-mapping">3. Select Mapping File</a><br/>
-                        <a href="/#add-suffix">4. Add Suffix</a>
+
+                <div className="container-contents">
+                    <h5 id="title-contents">INSTRUCTIONS</h5>
+                    <span id="link-container">
+                        <span id="links">
+                            <a href="/#" className="lighter" alt="Jump to Top"><span className="hide">0. </span>Jump to Top</a><br/>
+                            <a href="/#start-screen" alt="Jump to Step 1: Start Screen">1. Start Screen</a><br/>
+                            <a href="/#select-directory" alt="Jump to Step 2: Select Directory">2. Select Directory</a><br/>
+                            <a href="/#select-mapping" alt="Jump to Step 3: Select Mapping File">3. Select Mapping File</a><br/>
+                            <a href="/#add-suffix" alt="Jump to Step 4: Add Suffix">4. Add Suffix</a><br/><br/>
+                        </span>
                     </span>
-                </span>
+                </div>
+
+                <a href="#specifications"><h5 id="title-contents">MAPPING FILE<br/>SPECIFICATIONS</h5></a>
+
+
+
+                <div className="links-outside">
+                <h5 id="title-contents">LINKS</h5>
+                    <a href="https://drive.google.com/file/d/1gKHygE8Ac3TNBCmXqLBUBSoEhrP7-vVF/view?usp=sharing" alt="Link to Download">Download</a><br/>
+                    <a href="https://github.com/wjlevan/pdfbatchrename2" alt="Link to Source Code">Source code</a>
+                </div>
 
                 <div className="img-container">
-                    <img className="github" src={github}/>
-                    <img className="linkedin" src={linkedin} />
+                    <a href="https://github.com/wjlevan" alt="Link to Author's Github" className="github" ><img className="github" src={github}/></a>
+                    <a href="https://www.linkedin.com/in/walterlevan" className="linkedin" alt="Link to Author's LinkedIn"><img className="linkedin" src={linkedin} /></a>
                 </div>
 
             </div>

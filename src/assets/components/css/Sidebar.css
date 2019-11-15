@@ -1,11 +1,19 @@
 .sidebar-container {
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr 8fr;
+    /* grid-template-rows: 1fr 1fr 1fr 8fr; */
+    height: 100vh;
+    box-sizing: border-box;
+    grid-template-areas: 
+        "sidebar-title"
+        "sidebar-contents"
+        "sidebar-downloads"
+        "sidebar-links";
 }
 
 #sidebar-title {
     font-size: 90%;
     text-align: center;
+    grid-area: "sidebar-title";
 }
 
 #links {
@@ -17,6 +25,10 @@
 
 #link-container, #title-contents {
     text-align: center;
+}
+
+#link-container {
+    grid-area: "sidebar-contents";
 }
 
 #title-contents {
@@ -32,20 +44,32 @@ a {
     text-decoration: none;
 }
 
+.links-outside {
+    grid-area: "sidebar-downloads";
+}
 
 .github {
     width: 40px;
-    justify-self: center;
-    margin-top: 15vh;
+    justify-self: end;
 }
 
 .linkedin {
     width: 40px;
-    justify-self: center;
-    margin-top: 20px;
+    justify-self: start;
 }
 
 
 .img-container {
+    grid-area: "sidebar-links";
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     bottom: 0px;
+    column-gap: 20px;
+    align-self: end;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+.hide {
+    visibility: hidden;
 }

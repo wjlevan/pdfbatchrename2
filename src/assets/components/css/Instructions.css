@@ -1,4 +1,4 @@
-#title_instructions {
+#title_instructions, #title-specs {
     color: #d0021b;
 }
 
@@ -8,7 +8,9 @@
     grid-template-areas: 
     "instructions" "image";
     line-height: normal;
-    height: auto;
+    /* height: auto; */
+    box-sizing: border-box;
+
 }
 
 .step-instructions {
@@ -25,8 +27,6 @@
     text-align: center;
     padding-bottom: 50px;
     padding-top: 50px;
-    /* margin-top: 20px; */
-    /* margin-bottom: 20px; */
 }
 
 .note {
@@ -43,4 +43,13 @@
 
 #optional {
     font-weight: lighter;
+}
+
+#img-mapping {
+    width: 49vw;
+}
+
+.before-after {
+    font-weight: bolder;
+    padding-top: auto;
 }
