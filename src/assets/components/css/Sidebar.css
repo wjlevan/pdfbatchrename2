@@ -1,0 +1,28 @@
+#sidebar-title {
+    font-size: 90%;
+    text-align: center;
+}
+
+#links {
+    display: inline-block;
+    text-align: left;
+    margin-left: auto;
+    padding-left: 20px;
+}
+
+#link-container, #title-contents {
+    text-align: center;
+}
+
+#title-contents {
+    padding-top: 40px;
+    margin-bottom: 0px;
+}
+
+a {
+    color: black;
+}
+
+#sidebar-title-link {
+    text-decoration: none;
+}

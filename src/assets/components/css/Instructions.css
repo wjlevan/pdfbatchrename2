@@ -1,0 +1,30 @@
+#title_instructions {
+    color: #d0021b;
+}
+
+.step {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    grid-template-areas: 
+    "instructions" "image";
+}
+
+.step-instructions {
+    grid-area: "instructions";
+    background-color: white;
+    margin-right: 10px;
+    padding-top: 20px;    
+    padding-bottom: 20px;
+}
+
+.step-image {
+    grid-area: "image";
+    background-color: #333;
+}
+
+.note {
+    background-color: black;
+    color: yellow;
+    padding: 1px;
+    margin-right: 4px;
+}
