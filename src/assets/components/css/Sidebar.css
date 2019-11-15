@@ -1,3 +1,8 @@
+.sidebar-container {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 8fr;
+}
+
 #sidebar-title {
     font-size: 90%;
     text-align: center;
@@ -25,4 +30,22 @@ a {
 
 #sidebar-title-link {
     text-decoration: none;
+}
+
+
+.github {
+    width: 40px;
+    justify-self: center;
+    margin-top: 15vh;
+}
+
+.linkedin {
+    width: 40px;
+    justify-self: center;
+    margin-top: 20px;
+}
+
+
+.img-container {
+    bottom: 0px;
 }

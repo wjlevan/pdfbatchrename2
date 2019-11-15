@@ -7,6 +7,8 @@
     grid-template-columns: 2fr 3fr;
     grid-template-areas: 
     "instructions" "image";
+    line-height: normal;
+    height: auto;
 }
 
 .step-instructions {
@@ -20,6 +22,11 @@
 .step-image {
     grid-area: "image";
     background-color: #333;
+    text-align: center;
+    padding-bottom: 50px;
+    padding-top: 50px;
+    /* margin-top: 20px; */
+    /* margin-bottom: 20px; */
 }
 
 .note {
@@ -27,4 +34,13 @@
     color: yellow;
     padding: 1px;
     margin-right: 4px;
+}
+
+.divider {
+    border: 1px solid #333;
+}
+
+
+#optional {
+    font-weight: lighter;
 }

@@ -1,16 +1,16 @@
 .app {
   display: grid;
-  grid-template-rows: 1fr;
+  grid-template-rows: 1fr 1fr;
   grid-template-columns: 1fr;
   grid-template-areas: 
- "instructions";
-  height: 100vh;  
+ "instructions"
+ "downloads";
+  height: auto;  
   width: 100vw;
   margin-bottom: 100vh;
 }
 
 .sidebar {
-  grid-area: "sidebar";
   background-color: lightgrey;
   text-align: center;
   position: fixed;
@@ -21,10 +21,14 @@
 .instructions {
   grid-area: "instructions";
   background-color: white;
-  padding-left: 20px;
+  padding-left: 30px;
   font-style: normal; 
   font-variant: normal; 
   font-weight: 700; 
   line-height: 15px; 
   margin-left: 15vw;
+}
+
+.downloads {
+  grid-area: "downloads";
 }
