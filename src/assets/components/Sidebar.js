@@ -33,8 +33,8 @@ export class Sidebar extends Component {
                 </div>
 
                 <div className="img-container">
-                    <a href="https://github.com/wjlevan" alt="Link to Author's Github" className="github" ><img className="github" src={github}/></a>
-                    <a href="https://www.linkedin.com/in/walterlevan" className="linkedin" alt="Link to Author's LinkedIn"><img className="linkedin" src={linkedin} /></a>
+                    <a href="https://github.com/wjlevan" alt="Link to Author's Github" target="_noblank" className="github" ><img className="github" src={github}/></a>
+                    <a href="https://www.linkedin.com/in/walterlevan" className="linkedin" target="_noblank" alt="Link to Author's LinkedIn"><img className="linkedin" src={linkedin} /></a>
                 </div>
 
             </div>
