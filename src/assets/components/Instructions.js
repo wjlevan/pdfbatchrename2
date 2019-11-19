@@ -13,36 +13,37 @@ export class Instructions extends Component {
     render() {
         const title_instructions = <a name="instructions"><h1 id="title_instructions">Instructions</h1></a>
         const text_instructions = <p>To get started with PDF Batch Rename, you'll need a Windows 10 operating system. <br/><br/><br/>PDF Batch Rename is a stand-alone application with no installation required.<br/><br/><br/>First, run the executable application.</p>
-        const img_instructions = <img src={fileicon} />
+        const img_instructions = <img className="img-instr" src={fileicon} />
 
         const title_start = <a name="start-screen"><h2>Start Screen</h2></a>
         const text_start = <p>You will be prompted with the Start Screen.<br/><br/><br/>Select "Start!"</p>
-        const img_start = <img src={startscreen} />
+        const img_start = <img className="img-instr" src={startscreen} />
 
         const title_directory = <a name="select-directory"><h2>Select Directory</h2></a>
         const text_directory = <p>You will be prompted to select a directory.<br/><br/><br/>Select the directory containing the files you wish to rename.</p>
-        const img_directory = <img src={choosedirect} />
+        const img_directory = <img className="img-instr" src={choosedirect} />
 
         const title_mapping = <a name="select-mapping"><h2>Select Mapping File</h2></a>
         const text_mapping = <p>You will be prompted to select a mapping file.<br/><br/><br/>Select the mapping file that provides the old and new file names.</p>
-        const img_mapping = <img src={choosemap} />
+        const img_mapping = <img className="img-instr" src={choosemap} />
 
         const title_append = <a name="add-suffix"><h2>Add Suffix <span id="optional">(optional)</span></h2></a>
         const text_append = <p>You will be prompted with a text box. <br/><br/>Enter text you wish to append at the end of each file name.</p>
-        const img_append = <img src={appendtxt} />
+        const img_append = <img className="img-instr" src={appendtxt} />
 
         const title_before = <h2 className="before-after">Before:</h2>
-        const text_before = ""
-        const img_before = <img src={before} />
+        const text_before = <span className="hide"></span>
+
+        const img_before = <img className="img-instr" src={before} />
 
         const title_after = <h2 className="before-after">After:</h2>
-        const text_after = ""
-        const img_after = <img src={after} />
+        const text_after = <span className="hide"></span>
+        const img_after = <img className="img-instr" src={after} />
 
 
         const title_specs = <a name="specifications"><h1 id="title-specs">Specifications</h1></a>
         const text_specs = <p>This application reads file names with fields seperated by an underscore (see column A). <br/><br/>In this example, the first two fields are always the same and are used as unique identifiers (see columns B and C).<br/><br/>Column D contains the new file name.</p>
-        const img_specs = <img src={mapping} id="img-mapping"/>
+        const img_specs = <img className="img-instr" src={mapping} id="img-mapping"/>
 
         return(
             <div>
@@ -52,8 +53,8 @@ export class Instructions extends Component {
                 <Step title={title_mapping} text={text_mapping} img={img_mapping}/>
                 <Step title={title_append} text={text_append} img={img_append}/>
 
-                <Step title={title_before} text={text_before} img={img_before}/>
-                <Step title={title_after} text={text_after} img={img_after}/>
+                <Step title={title_before} img={img_before}/>
+                <Step title={title_after} img={img_after}/>
 
                 <Step title={title_specs} text={text_specs} img={img_specs}/>
 
@@ -69,7 +70,7 @@ class Step extends Component {
             <div className="step">
                 <div className="step-instructions">
                     {this.props.title}
-                    {this.props.text}
+                    {this.props.text ? this.props.text : null } 
                  </div>
 
                 <div className="step-image">

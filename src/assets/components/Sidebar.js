@@ -13,7 +13,7 @@ export class Sidebar extends Component {
                     <h5 id="title-contents">INSTRUCTIONS</h5>
                     <span id="link-container">
                         <span id="links">
-                            <a href="/#" className="lighter" alt="Jump to Top"><span className="hide">0. </span>Jump to Top</a><br/>
+                            <a href="/#" className="lighter hide" alt="Jump to Top"><span className="hide">0. </span>Jump to Top</a><br/>
                             <a href="/#start-screen" alt="Jump to Step 1: Start Screen">1. Start Screen</a><br/>
                             <a href="/#select-directory" alt="Jump to Step 2: Select Directory">2. Select Directory</a><br/>
                             <a href="/#select-mapping" alt="Jump to Step 3: Select Mapping File">3. Select Mapping File</a><br/>

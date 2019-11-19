@@ -3,6 +3,7 @@ import {Sidebar} from './assets/components/Sidebar';
 import {Instructions} from './assets/components/Instructions';
 import './App.css';
 
+
 function App() {
   return (
     <div className="app">

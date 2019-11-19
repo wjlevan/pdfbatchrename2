@@ -1,3 +1,5 @@
+@media (min-width: 800px) {
+
 #title_instructions, #title-specs {
     color: #d0021b;
 }
@@ -53,3 +55,86 @@
     font-weight: bolder;
     padding-top: auto;
 }
+}
+
+@media (max-width: 799px) {
+
+    #title_instructions, #title-specs {
+        color: #d0021b;
+    }
+    
+    .step {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 
+        "instructions" 
+        "image";
+        line-height: normal;
+        /* height: auto; */
+        /* box-sizing: border-box; */
+        width: 100%;
+        grid-row-gap: 0px;
+        height: fit-content;
+    }
+    
+    .step-instructions {
+        grid-area: "instructions";
+        background-color: white;
+        /* margin-right: 10px; */
+        /* padding-top: 20px;     */
+        /* padding-bottom: 20px; */
+        padding: 10px;
+        margin-right: 10px;
+        /* height: 100px; */
+    }
+
+    
+    .step-image {
+        grid-area: "image";
+        /* background-color: #333; */
+        /* text-align: center; */
+        /* padding-bottom: 50px; */
+        /* padding-top: 50px; */
+        padding: 10px;
+        width: 100vw;
+        }
+    
+    .note {
+        background-color: black;
+        color: yellow;
+        padding: 1px;
+        margin-right: 4px;
+    }
+    
+    .divider {
+        border: 1px solid #333;
+    }
+    
+    
+    #optional {
+        font-weight: lighter;
+    }
+    
+    #img-mapping {
+        /* width: 49vw; */
+    }
+    
+    .before-after {
+        /* font-weight: bolder; */
+        /* padding-top: auto; */
+        padding-bottom: 0px;
+        margin-bottom: 0px;
+    }
+    .img-instr {
+        height: auto;
+        width: 90%;
+        height: auto;
+        border: 10px solid #333;
+    }
+    .hide {
+        visibility: hidden;
+    }    
+}
+
+
+    

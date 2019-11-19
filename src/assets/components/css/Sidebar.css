@@ -1,3 +1,4 @@
+@media (min-width: 800px) {
 .sidebar-container {
     display: grid;
     /* grid-template-rows: 1fr 1fr 1fr 8fr; */
@@ -8,6 +9,10 @@
         "sidebar-contents"
         "sidebar-downloads"
         "sidebar-links";
+}
+
+.container-contents {
+    grid-area: "sidebar-contents";
 }
 
 #sidebar-title {
@@ -73,3 +78,92 @@ a {
 .hide {
     visibility: hidden;
 }
+}
+
+@media (max-width: 799px) {
+    .sidebar-container {
+        display: grid;
+        /* grid-template-rows: 1fr 1fr 1fr 8fr; */
+        /* height: 100vh; */
+        box-sizing: border-box;
+        grid-template-areas: 
+            "sidebar-title"
+            "sidebar-contents"
+            "sidebar-downloads"
+            "sidebar-links";
+        width: 100vw;
+        overflow-x: hidden;
+        text-align: center;
+        }
+    .container-contents {
+        grid-area: "sidebar-contents";
+    }
+
+    
+    #sidebar-title {
+        font-size: 90%;
+        /* text-align: center; */
+        grid-area: "sidebar-title";
+    }
+    
+    #links {
+        display: inline-block;
+        text-align: left;
+        margin-left: auto;
+        /* padding-left: 20px; */
+    }
+    
+    #link-container, #title-contents {
+        text-align: center;
+        justify-self: center;
+        margin-left: auto;
+    }
+    
+    #link-container {
+        /* grid-area: "sidebar-contents"; */
+    }
+    
+    #title-contents {
+        /* padding-top: 40px; */
+        /* margin-bottom: 0px; */
+    }
+    
+    a {
+        color: black;
+    }
+    
+    #sidebar-title-link {
+        text-decoration: none;
+    }
+    
+    .links-outside {
+        grid-area: "sidebar-downloads";
+    }
+    
+    .github {
+        width: 40px;
+        justify-self: end;
+    }
+    
+    .linkedin {
+        width: 40px;
+        justify-self: start;
+    }
+    
+    
+    .img-container {
+        grid-area: "sidebar-links";
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        bottom: 0px;
+        column-gap: 20px;
+        align-self: end;
+        box-sizing: border-box;
+        margin-bottom: 20px;
+        padding-top: 20px;
+    }
+    
+    .hide {
+        visibility: hidden;
+    }
+    }
