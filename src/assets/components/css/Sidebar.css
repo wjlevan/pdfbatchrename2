@@ -101,9 +101,11 @@ a {
 
     
     #sidebar-title {
-        font-size: 90%;
+        /* font-size: 90%; */
         /* text-align: center; */
         grid-area: "sidebar-title";
+        color: #d0021b;
+
     }
     
     #links {
@@ -134,6 +136,8 @@ a {
     
     #sidebar-title-link {
         text-decoration: none;
+        color: #d0021b;
+
     }
     
     .links-outside {
