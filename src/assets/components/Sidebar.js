@@ -29,7 +29,7 @@ export class Sidebar extends Component {
                 <div className="links-outside">
                 <h5 id="title-contents">LINKS</h5>
                     <a href="https://drive.google.com/file/d/1gKHygE8Ac3TNBCmXqLBUBSoEhrP7-vVF/view?usp=sharing" alt="Link to Download">Download</a><br/>
-                    <a href="https://github.com/wjlevan/pdfbatchrename2" alt="Link to Source Code">Source code</a>
+                    <a href="https://github.com/wjlevan/pdfbatchrename2/blob/master/pdfbatchrename.py" alt="Link to Source Code">Source code</a>
                 </div>
 
                 <div className="img-container">
