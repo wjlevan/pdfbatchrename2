@@ -28,7 +28,7 @@ export class Sidebar extends Component {
 
                 <div className="links-outside">
                 <h5 id="title-contents">LINKS</h5>
-                    <a href="https://drive.google.com/file/d/1gKHygE8Ac3TNBCmXqLBUBSoEhrP7-vVF/view?usp=sharing" alt="Link to Download">Download</a><br/>
+                    <a href="https://drive.google.com/file/d/1am_ffXhwbxb8tXa-6Htct-a4SLs0Eduq/view?usp=sharing" alt="Link to Download">Download</a><br/>
                     <a href="https://github.com/wjlevan/pdfbatchrename2" alt="Link to Source Code">Source code</a>
                 </div>
 
